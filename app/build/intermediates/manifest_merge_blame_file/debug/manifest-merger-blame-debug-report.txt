@@ -1,0 +1,61 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.yellowcode.tournote"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->C:\Users\trung\AndroidStudioProjects\TourNote-bai_25_navigation_drawer_update_2019\TourNote\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->C:\Users\trung\AndroidStudioProjects\TourNote-bai_25_navigation_drawer_update_2019\TourNote\app\src\main\AndroidManifest.xml
+10
+11    <supports-screens
+11-->C:\Users\trung\AndroidStudioProjects\TourNote-bai_25_navigation_drawer_update_2019\TourNote\app\src\main\AndroidManifest.xml:5:5-9:40
+12        android:largeScreens="true"
+12-->C:\Users\trung\AndroidStudioProjects\TourNote-bai_25_navigation_drawer_update_2019\TourNote\app\src\main\AndroidManifest.xml:6:9-36
+13        android:normalScreens="true"
+13-->C:\Users\trung\AndroidStudioProjects\TourNote-bai_25_navigation_drawer_update_2019\TourNote\app\src\main\AndroidManifest.xml:7:9-37
+14        android:smallScreens="false"
+14-->C:\Users\trung\AndroidStudioProjects\TourNote-bai_25_navigation_drawer_update_2019\TourNote\app\src\main\AndroidManifest.xml:8:9-37
+15        android:xlargeScreens="true" />
+15-->C:\Users\trung\AndroidStudioProjects\TourNote-bai_25_navigation_drawer_update_2019\TourNote\app\src\main\AndroidManifest.xml:9:9-37
+16
+17    <application
+17-->C:\Users\trung\AndroidStudioProjects\TourNote-bai_25_navigation_drawer_update_2019\TourNote\app\src\main\AndroidManifest.xml:11:5-25:19
+18        android:allowBackup="true"
+18-->C:\Users\trung\AndroidStudioProjects\TourNote-bai_25_navigation_drawer_update_2019\TourNote\app\src\main\AndroidManifest.xml:12:9-35
+19        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+19-->[com.android.support:support-compat:28.0.0] C:\Users\trung\.gradle\caches\transforms-2\files-2.1\ccf94a4f227dfa4f17156620e28a8b98\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+20        android:debuggable="true"
+21        android:icon="@mipmap/ic_launcher"
+21-->C:\Users\trung\AndroidStudioProjects\TourNote-bai_25_navigation_drawer_update_2019\TourNote\app\src\main\AndroidManifest.xml:13:9-43
+22        android:label="@string/app_name"
+22-->C:\Users\trung\AndroidStudioProjects\TourNote-bai_25_navigation_drawer_update_2019\TourNote\app\src\main\AndroidManifest.xml:14:9-41
+23        android:roundIcon="@mipmap/ic_launcher_round"
+23-->C:\Users\trung\AndroidStudioProjects\TourNote-bai_25_navigation_drawer_update_2019\TourNote\app\src\main\AndroidManifest.xml:15:9-54
+24        android:supportsRtl="true"
+24-->C:\Users\trung\AndroidStudioProjects\TourNote-bai_25_navigation_drawer_update_2019\TourNote\app\src\main\AndroidManifest.xml:16:9-35
+25        android:testOnly="true"
+26        android:theme="@style/AppTheme" >
+26-->C:\Users\trung\AndroidStudioProjects\TourNote-bai_25_navigation_drawer_update_2019\TourNote\app\src\main\AndroidManifest.xml:17:9-40
+27        <activity android:name="com.yellowcode.tournote.MainActivity" >
+27-->C:\Users\trung\AndroidStudioProjects\TourNote-bai_25_navigation_drawer_update_2019\TourNote\app\src\main\AndroidManifest.xml:18:9-24:20
+27-->C:\Users\trung\AndroidStudioProjects\TourNote-bai_25_navigation_drawer_update_2019\TourNote\app\src\main\AndroidManifest.xml:18:19-47
+28            <intent-filter>
+28-->C:\Users\trung\AndroidStudioProjects\TourNote-bai_25_navigation_drawer_update_2019\TourNote\app\src\main\AndroidManifest.xml:19:13-23:29
+29                <action android:name="android.intent.action.VIEW" />
+29-->C:\Users\trung\AndroidStudioProjects\TourNote-bai_25_navigation_drawer_update_2019\TourNote\app\src\main\AndroidManifest.xml:20:17-69
+29-->C:\Users\trung\AndroidStudioProjects\TourNote-bai_25_navigation_drawer_update_2019\TourNote\app\src\main\AndroidManifest.xml:20:25-66
+30                <action android:name="android.intent.action.MAIN" />
+30-->C:\Users\trung\AndroidStudioProjects\TourNote-bai_25_navigation_drawer_update_2019\TourNote\app\src\main\AndroidManifest.xml:21:17-69
+30-->C:\Users\trung\AndroidStudioProjects\TourNote-bai_25_navigation_drawer_update_2019\TourNote\app\src\main\AndroidManifest.xml:21:25-66
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->C:\Users\trung\AndroidStudioProjects\TourNote-bai_25_navigation_drawer_update_2019\TourNote\app\src\main\AndroidManifest.xml:22:17-77
+32-->C:\Users\trung\AndroidStudioProjects\TourNote-bai_25_navigation_drawer_update_2019\TourNote\app\src\main\AndroidManifest.xml:22:27-74
+33            </intent-filter>
+34        </activity>
+35    </application>
+36
+37</manifest>
