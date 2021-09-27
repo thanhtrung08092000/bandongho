@@ -1,4 +1,4 @@
-#Sat Sep 25 14:06:29 ICT 2021
-base.0=C\:\\Users\\trung\\AndroidStudioProjects\\TourNote-bai_25_navigation_drawer_update_2019\\TourNote\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+#Sat Sep 25 21:13:44 ICT 2021
+base.0=D\:\\bandongho\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

@@ -1009,6 +1009,7 @@ drawable anhnen3
 drawable anhnen4
 drawable avd_hide_password
 drawable avd_show_password
+drawable cancel
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1027,6 +1028,7 @@ drawable ic_mtrl_chip_close_circle
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable nophoto
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -1131,6 +1133,7 @@ id icon
 id icon_group
 id ifRoom
 id image
+id imageviewloaisp
 id info
 id invisible
 id italic
@@ -1141,6 +1144,7 @@ id left
 id line1
 id line3
 id listMode
+id listViewManHinhChinh
 id list_item
 id masked
 id message
@@ -1149,6 +1153,7 @@ id mini
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id navigationView
 id navigation_header_container
 id never
 id none
@@ -1227,6 +1232,7 @@ id text_input_password_toggle
 id textinput_counter
 id textinput_error
 id textinput_helper_text
+id textviewloaisp
 id time
 id title
 id titleDividerNoCustom
@@ -1311,6 +1317,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout donglistview_loaisp
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action

@@ -54,6 +54,7 @@
     <!-- Left Menu -->
 
     <android.support.design.widget.NavigationView
+        android:id="@+id/navigationView"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
@@ -102,56 +103,12 @@
 
             </LinearLayout>
 
-            <!-- Item Info -->
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/navigation_item_height"
-                android:layout_marginTop="3dp"
-                android:background="@android:color/white"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin">
-
-                <ImageView
-                    android:layout_width="@dimen/navigation_item_icon_size"
-                    android:layout_height="@dimen/navigation_item_icon_size"
-                    android:src="@drawable/ic_action_info" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="32dp"
-                    android:text="@string/menu_item_about_app" />
-
-            </LinearLayout>
-
-            <!-- Item Help -->
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/navigation_item_height"
-                android:background="@android:color/white"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin">
-
-                <ImageView
-                    android:layout_width="@dimen/navigation_item_icon_size"
-                    android:layout_height="@dimen/navigation_item_icon_size"
-                    android:src="@drawable/ic_action_help" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="32dp"
-                    android:text="@string/menu_item_help" />
-
-            </LinearLayout>
+        <ListView
+            android:id="@+id/listViewManHinhChinh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
 
         </LinearLayout>
-
     </android.support.design.widget.NavigationView>
 </android.support.v4.widget.DrawerLayout>

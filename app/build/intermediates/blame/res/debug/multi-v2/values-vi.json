@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\trung\\AndroidStudioProjects\\TourNote-bai_25_navigation_drawer_update_2019\\TourNote\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-vi\\values-vi.xml",
+            "outputFile": "D:\\bandongho\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-vi\\values-vi.xml",
             "map": [
                 {
                     "source": "C:\\Users\\trung\\.gradle\\caches\\transforms-2\\files-2.1\\8516ac599c0f39cda6e75249f41fc5c3\\appcompat-v7-28.0.0\\res\\values-vi\\values-vi.xml",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\trung\\AndroidStudioProjects\\TourNote-bai_25_navigation_drawer_update_2019\\TourNote\\app\\src\\main\\res\\values-vi\\strings.xml",
+                    "source": "D:\\bandongho\\app\\src\\main\\res\\values-vi\\strings.xml",
                     "from": {
                         "startLines": "1,4,5,14,15,16,17,9,10,8,11,28,29,22,21,25,23,27,26,24,20",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

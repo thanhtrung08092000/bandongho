@@ -1,23 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\trung\\AndroidStudioProjects\\TourNote-bai_25_navigation_drawer_update_2019\\TourNote\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "D:\\bandongho\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\trung\\AndroidStudioProjects\\TourNote-bai_25_navigation_drawer_update_2019\\TourNote\\app\\src\\main\\res\\values\\colors.xml",
+                    "source": "D:\\bandongho\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
-                        "startLines": "4,2,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "153,55,102",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "194,97,148"
+                        "startLines": "3,10",
+                        "startColumns": "4,4",
+                        "startOffsets": "54,374",
+                        "endLines": "8,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "368,695"
                     },
                     "to": {
-                        "startLines": "192,193,194",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "9973,10019,10066",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "10014,10061,10112"
+                        "startLines": "620,2049",
+                        "startColumns": "4,4",
+                        "startOffsets": "38476,131113",
+                        "endLines": "625,2055",
+                        "endColumns": "12,12",
+                        "endOffsets": "38790,131434"
                     }
                 },
                 {
@@ -97,25 +99,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\trung\\AndroidStudioProjects\\TourNote-bai_25_navigation_drawer_update_2019\\TourNote\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "3,10",
-                        "startColumns": "4,4",
-                        "startOffsets": "54,374",
-                        "endLines": "8,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "368,695"
-                    },
-                    "to": {
-                        "startLines": "620,2049",
-                        "startColumns": "4,4",
-                        "startOffsets": "38476,131113",
-                        "endLines": "625,2055",
-                        "endColumns": "12,12",
-                        "endOffsets": "38790,131434"
-                    }
-                },
-                {
                     "source": "C:\\Users\\trung\\.gradle\\caches\\transforms-2\\files-2.1\\d280ec5d1eac08885b834bf6ffaad6a0\\cardview-v7-28.0.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,35,36,37,38,45,47,50,7",
@@ -135,7 +118,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\trung\\AndroidStudioProjects\\TourNote-bai_25_navigation_drawer_update_2019\\TourNote\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "D:\\bandongho\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "1,4,5,14,15,16,17,9,10,8,11,19,18,31,32,25,24,28,26,30,29,27,23",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -149,6 +132,40 @@
                         "startOffsets": "34346,34849,34903,35407,35473,35530,35589,35704,35762,35810,35862,36004,36101,36196,36276,36337,36395,36449,36515,36574,36643,36703,36779",
                         "endColumns": "45,53,51,65,56,58,114,57,47,51,60,96,94,79,60,57,53,65,58,68,59,75,51",
                         "endOffsets": "34387,34898,34950,35468,35525,35584,35699,35757,35805,35857,35918,36096,36191,36271,36332,36390,36444,36510,36569,36638,36698,36774,36826"
+                    }
+                },
+                {
+                    "source": "D:\\bandongho\\app\\src\\main\\res\\values\\dimens.xml",
+                    "from": {
+                        "startLines": "2,3,7,6,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "88,146,289,241,338,395,449",
+                        "endColumns": "57,55,48,47,56,53,56",
+                        "endOffsets": "141,197,333,284,390,444,501"
+                    },
+                    "to": {
+                        "startLines": "334,335,392,393,455,456,457",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "19497,19555,23246,23295,27190,27247,27301",
+                        "endColumns": "57,55,48,47,56,53,56",
+                        "endOffsets": "19550,19606,23290,23338,27242,27296,27353"
+                    }
+                },
+                {
+                    "source": "D:\\bandongho\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "153,55,102",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "194,97,148"
+                    },
+                    "to": {
+                        "startLines": "192,193,194",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "9973,10019,10066",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "10014,10061,10112"
                     }
                 },
                 {
@@ -190,7 +207,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\trung\\AndroidStudioProjects\\TourNote-bai_25_navigation_drawer_update_2019\\TourNote\\app\\src\\main\\res\\values\\ic_launcher_background.xml",
+                    "source": "D:\\bandongho\\app\\src\\main\\res\\values\\ic_launcher_background.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -204,23 +221,6 @@
                         "startOffsets": "11561",
                         "endColumns": "56",
                         "endOffsets": "11613"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\trung\\AndroidStudioProjects\\TourNote-bai_25_navigation_drawer_update_2019\\TourNote\\app\\src\\main\\res\\values\\dimens.xml",
-                    "from": {
-                        "startLines": "2,3,7,6,8,9,10",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "88,146,289,241,338,395,449",
-                        "endColumns": "57,55,48,47,56,53,56",
-                        "endOffsets": "141,197,333,284,390,444,501"
-                    },
-                    "to": {
-                        "startLines": "334,335,392,393,455,456,457",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "19497,19555,23246,23295,27190,27247,27301",
-                        "endColumns": "57,55,48,47,56,53,56",
-                        "endOffsets": "19550,19606,23290,23338,27242,27296,27353"
                     }
                 },
                 {

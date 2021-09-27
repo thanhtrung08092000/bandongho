@@ -2,6 +2,7 @@ package com.yellowcode.tournote.activity;
 
 import android.content.Context;
 import android.content.res.Configuration;
+import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -12,23 +13,40 @@ import android.view.MenuItem;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.Volley;
 import com.yellowcode.tournote.R;
 import com.yellowcode.tournote.adapter.LoaispAdapter;
 import com.yellowcode.tournote.model.Loaisp;
+import com.yellowcode.tournote.ultil.Server;
+import com.yellowcode.tournote.ultil.checkConnection;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity<JsonArrayRequest> extends AppCompatActivity {
     RecyclerView recyclerViewmanhinhchinh;
     ViewFlipper viewFlipper;
     int[] arrayHinh={R.drawable.anhnen1,R.drawable.anhnen2,R.drawable.anhnen3,
             R.drawable.anhnen4};
+    NavigationView navigationView;
+    ListView listViewManHinhChinh;
 
     ArrayList<Loaisp> mangloaisp;
     LoaispAdapter loaispAdapter;
+    int id=0;
+    String tenloaisp= "";
+    String hinhanhloaisp ="";
 
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle drawerToggle;
@@ -46,22 +64,10 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
 
 
-        ActionViewFlipper();
+
         Anhxa();
-    }
+        getDuLieuLoaiSanPham();
 
-    private void Anhxa() {
-        recyclerViewmanhinhchinh= (RecyclerView) findViewById(R.id.recyclerview);
-        viewFlipper=(ViewFlipper) findViewById(R.id.viewlipper);
-
-        mangloaisp =new ArrayList<>();
-        mangloaisp.add(0,new Loaisp(0,"Clothesuit","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyyPFbxER9CaziwnRh9UgBFqauaA2DOR_ZTCXFkK9iLmFdeoPE5w"));
-        loaispAdapter=new LoaispAdapter(mangloaisp,getApplicationContext());
-
-
-    }
-
-    private void ActionViewFlipper() {
         for (int i  = 0 ; i< arrayHinh.length;i++) {
             ImageView imageView= new ImageView(this);
             imageView.setImageResource(arrayHinh[i]);
@@ -77,6 +83,56 @@ public class MainActivity extends AppCompatActivity {
         viewFlipper.setInAnimation(animation_slide_in);
         viewFlipper.setInAnimation(animation_slide_out);
     }
+
+    private void getDuLieuLoaiSanPham() {
+        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
+        JsonArrayRequest jsonArrayRequest=new JsonArrayRequest(Server.duongDanLoaiSanPham, new Response.Listener<JSONArray>(){
+
+            @Override
+
+            public void onResponse(JSONArray response) {
+                if(response != null){
+
+                    for(int i = 0;i < response.length();i++){
+                        try {
+                            JSONObject jsonObject =response.getJSONObject(i);
+                            id =jsonObject.getInt("id");
+                            tenloaisp=jsonObject.getString("tenloaisp");
+                            hinhanhloaisp =jsonObject.getString("hinhanhloaisp");
+                            mangloaisp.add(new Loaisp(id,tenloaisp,hinhanhloaisp));
+                            loaispAdapter.notifyDataSetChanged();
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    mangloaisp.add( 3,new Loaisp(0,"Liên hệ","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpCeVuVWGdIbeB88vj6moAw0vSEt5dPuRFN0FZqy5UdS5wN1wp"));
+                    mangloaisp.add(4,new Loaisp(0,"Thông tin","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSynBh4ywTCWrkfmGUUKvbhd7ahU-tm2iyTQPnLQixfOr7q-9QzKQ"));
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                checkConnection.ShowToast_Short(getApplicationContext(),error.toString());
+            }
+        });
+        requestQueue.add( jsonArrayRequest);
+    }
+
+
+    private void Anhxa() {
+        recyclerViewmanhinhchinh= (RecyclerView) findViewById(R.id.recyclerview);
+        viewFlipper=(ViewFlipper) findViewById(R.id.viewlipper);
+        navigationView = findViewById(R.id.navigationView);
+        listViewManHinhChinh = findViewById(R.id.listViewManHinhChinh);
+
+        mangloaisp =new ArrayList<>();
+        loaispAdapter=new LoaispAdapter(mangloaisp,getApplicationContext());
+        listViewManHinhChinh.setAdapter(loaispAdapter);
+
+
+    }
+
+
 
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
